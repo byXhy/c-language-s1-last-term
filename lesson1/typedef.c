@@ -10,18 +10,20 @@
  *
  *      Date       : 03-14-2015
  *
- *      Description:
+ *      Description: Modified in 05-11-2016
  ********************************************************************************
  */
  
 #include <stdio.h>
 
+typedef unsigned char BYTE;
+typedef short         SHORT;
 typedef int           INT32;
 typedef long          LONG16;
 typedef double        DOUBLE;   
-typedef unsigned char BYTE;
+
 typedef struct _demo {
-    short  s;
+    SHORT  s;
     BYTE   b1;
     BYTE   b2;
     INT32  i;
@@ -29,19 +31,21 @@ typedef struct _demo {
     DOUBLE k;
 } DEMO;
 
-int main(void)
+int main()
 {
-    INT32   i32;
     BYTE    byte;
+    SHORT   s;
+    INT32   i32;
     LONG16  long16;
     DOUBLE  b;
     DEMO    d;
     
-    printf("%d, %d\n", sizeof(INT32),  sizeof(i32));
-    printf("%d, %d\n", sizeof(BYTE),   sizeof(byte));
-    printf("%d, %d\n", sizeof(DEMO),   sizeof(d));
-    printf("%d, %d\n", sizeof(LONG16), sizeof(long16));
-    printf("%d, %d\n", sizeof(DOUBLE), sizeof(b));
+    printf("sizeof(BYTE)   = %d, sizeof(byte)   = %d\n", sizeof(BYTE),   sizeof(byte));
+    printf("sizeof(SHORT)  = %d, sizeof(s)      = %d\n", sizeof(SHORT),  sizeof(s));
+    printf("sizeof(INT32)  = %d, sizeof(i32)    = %d\n", sizeof(INT32),  sizeof(i32));
+    printf("sizeof(LONG16) = %d, sizeof(long16) = %d\n", sizeof(LONG16), sizeof(long16));
+    printf("sizeof(DOUBLE) = %d, sizeof(b)      = %d\n", sizeof(DOUBLE), sizeof(b));
+    printf("sizeof(DEMO)   = %d, sizeof(d)      = %d\n", sizeof(DEMO),   sizeof(d));
 
     return 0;
 }

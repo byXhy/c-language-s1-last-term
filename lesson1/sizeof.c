@@ -10,7 +10,7 @@
  *
  *      Date       : 03-14-2015
  *
- *      Description:
+ *      Description: Modified in 05-11-2016
  ********************************************************************************
  */
  
@@ -18,15 +18,15 @@
 
 int main(void)
 {
-    char  c = 0;
-    short s = 0;
-    int   i = 0;
+    char   c = 0;
+    short  s = 0;
+    int    i = 0;
     double j = 0;
  
-    printf("%d, %d\n", sizeof(char), sizeof(c));
-    printf("%d, %d\n", sizeof(short), sizeof(s));
-    printf("%d, %d\n", sizeof(int), sizeof(i));
-    printf("%d, %d\n", sizeof(double), sizeof(j));
+    printf("sizeof(char)   = %d, sizeof(c) = %d\n", sizeof(char),   sizeof(c));
+    printf("sizeof(short)  = %d, sizeof(s) = %d\n", sizeof(short),  sizeof(s));
+    printf("sizeof(int)    = %d, sizeof(i) = %d\n", sizeof(int),    sizeof(i));
+    printf("sizeof(double) = %d, sizeof(j) = %d\n", sizeof(double), sizeof(j));
 
     return 0;
 }
