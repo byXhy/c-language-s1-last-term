@@ -10,3 +10,4 @@ int func1(void)
 {
     return func();
 }
+
